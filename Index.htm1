@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Machine Video Photo</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #d1d5db;
+    }
+
+    nav {
+      background: #1f2937;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 45px 20px;
+      text-align: center;
+      background: white;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #555;
+      font-size: 17px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 27px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    }
+
+    .card img,
+    .card video {
+      width: 100%;
+      display: block;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 7px;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+
+    .contact {
+      margin-top: 35px;
+      background: #111827;
+      color: white;
+      padding: 35px 20px;
+      text-align: center;
+      border-radius: 12px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 15px;
+      background: #22c55e;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 35px;
+      padding: 20px;
+      background: #111827;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 23px;
+      }
+
+      .hero h2 {
+        font-size: 25px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>⚙️ Machine Video Photo</h1>
+    <p>মেশিনের ছবি ও ভিডিও দেখুন</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#photos">Photos</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Welcome to Machine Video Photo</h2>
+    <p>বিভিন্ন ধরনের মেশিনের ছবি, ভিডিও এবং তথ্য এখানে দেখুন।</p>
+  </section>
+
+  <section class="container" id="photos">
+    <h2 class="title">📷 Machine Photos</h2>
+
+    <div class="gallery">
+
+      <!-- নিজের ছবির নাম এখানে বসাবে -->
+      <div class="card">
+        <img src="images/machine1.jpg" alt="Machine">
+        <div class="card-content">
+          <h3>Machine 1</h3>
+          <p>মেশিনের ছবি ও সংক্ষিপ্ত তথ্য।</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/machine2.jpg" alt="Machine">
+        <div class="card-content">
+          <h3>Machine 2</h3>
+          <p>মেশিনের ছবি ও সংক্ষিপ্ত তথ্য।</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container" id="videos">
+    <h2 class="title">🎥 Machine Videos</h2>
+
+    <div class="gallery">
+
+      <div class="card">
+        <video controls>
+          <source src="videos/machine1.mp4" type="video/mp4">
+          আপনার ব্রাউজার ভিডিও চালাতে পারে না।
+        </video>
+
+        <div class="card-content">
+          <h3>Machine Video 1</h3>
+          <p>মেশিনের কাজের ভিডিও।</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container" id="contact">
+
+    <div class="contact">
+      <h2>📞 Contact</h2>
+      <p style="margin-top:10px;">
+        মেশিন সম্পর্কে জানতে আমাদের সাথে যোগাযোগ করুন।
+      </p>
+
+      <!-- এখানে নিজের WhatsApp নম্বর বসাবে -->
+      <a href="https://wa.me/91XXXXXXXXXX">
+        WhatsApp করুন
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Machine Video Photo | All Rights Reserved
+  </footer>
+
+</body>
+</html>
